@@ -1,16 +1,16 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.5" %}
 
 package:
   name: minikanren
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/miniKanren/miniKanren-{{ version }}.tar.gz
-  sha256: 1ec8bdb01144ad5e8752c7c297fb8a122db920f859276d25a72d164e998d7f6e
+  url: https://pypi.org/packages/source/m/miniKanren/minikanren-{{ version }}.tar.gz
+  sha256: c030e3e9a3fa5f372f84b66966776a8dc63b16b98768b78be0401982b892e00d
   patches:
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -21,11 +21,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - toolz
     - cons >=0.4.0
-    - multipledispatch
     - etuples >=0.3.1
     - logical-unification >=0.4.1
+    - multipledispatch
+    - toolz
+    - typing_extensions
 
 test:
   requires:
