@@ -7,9 +7,11 @@ Home: https://github.com/pythological/kanren
 
 Package license: BSD-3-Clause
 
-Summary: An extensible, lightweight relational/logic programming DSL written in pure Python
+Summary: Relational programming in Python
 
 Development: https://github.com/pythological/kanren
+
+An extensible, lightweight relational/logic programming DSL written in pure Python
 
 Current build status
 ====================
